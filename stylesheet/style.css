@@ -122,6 +122,41 @@ h1::first-letter {
     color: #7bbb2b;
 }
 
-h1{
+h1 {
     text-align: center;
+}
+
+.intro1,
+.intro2 {
+    width: 400px;
+    float: left;
+    padding: 50px 100px;
+}
+
+.intro1,
+.intro2 p {
+    text-align: center;
+}
+
+.boeken {
+    padding: 15px 25px;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.boeken a{
+    color: white;
+    text-decoration: none;
+}
+
+.intro2 button.boeken{
+    margin-left: 112px;
+}
+
+.paars{
+    height: 5px;
+    border-width: 0;
+    color: #a40059;
+    background-color: #a40059;
 }
