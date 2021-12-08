@@ -11,9 +11,15 @@ body {
     clear: both;
 }
 
+.container_header, .container_footer {
+    width: 1200px;
+    margin: auto;
+}
+
 .container {
     width: 1200px;
     margin: auto;
+    padding: 100px 0;
 }
 
 header {
@@ -145,18 +151,68 @@ h1 {
     border-style: none;
 }
 
-.boeken a{
+.boeken a {
     color: white;
     text-decoration: none;
 }
 
-.intro2 button.boeken{
+.intro2 button.boeken {
     margin-left: 112px;
 }
 
-.paars{
+.paars {
     height: 5px;
     border-width: 0;
     color: #a40059;
     background-color: #a40059;
+}
+
+.activiteiten,
+.eten_drinken,
+.event,
+.feestzaal {
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin: 100px 40px;
+    text-align: center;
+    background-color: #808A87;
+    padding: 25px 10px;
+}
+
+.ster,
+.glas,
+.kalender,
+.feest {
+    color: #7bbb2b;
+}
+
+.goud{
+    color: gold;
+}
+
+.review1, .review2, .review3{
+    width: 125px;
+    height: 175px;
+    float: left;
+    margin: 100px 125px;
+    text-align: center;
+    background-color: #808A87;
+    padding: 25px 10px;
+}
+
+.nieuwsbrief{
+    text-align: center;
+}
+
+.nieuwsbrief button.inschrijven{
+    padding: 15px 25px;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.inschrijven a{
+    color: white;
+    text-decoration: none;
 }
