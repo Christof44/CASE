@@ -219,6 +219,7 @@ h1 {
 
 .image-holder {
   border: 2.5px solid #76af46;
+  border-radius: 10px;
   display: inline-block;
   vertical-align: top;
 }
