@@ -18,7 +18,7 @@ body {
 
 header {
     height: 120px;
-    padding: 25px 0;
+    padding-top: 25px;
     background-color: slategray;
 }
 
@@ -81,11 +81,12 @@ footer {
     float: left;
 }
 
-.footer1, .footer3{
+.footer1,
+.footer3 {
     margin-top: 100px;
 }
 
-.footer2 img{
+.footer2 img {
     margin: 0 50px;
 }
 
@@ -95,12 +96,32 @@ footer {
     text-align: center;
 }
 
-.footer3 a{
+.footer3 a {
     text-decoration: none;
     color: #a40059;
 }
 
-.footer3 a:hover{
+.footer3 a:hover {
     color: #7bbb2b;
 }
 
+.video {
+    margin: 50px 320px;
+}
+
+.groen {
+    height: 5px;
+    border-width: 0;
+    color: #7bbb2b;
+    background-color: #7bbb2b;
+}
+
+h1::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+    color: #7bbb2b;
+}
+
+h1{
+    text-align: center;
+}
