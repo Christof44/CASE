@@ -226,6 +226,6 @@ h1 {
 .image-holder img {
   position: relative;
   z-index: -1;
-  left: 10px;
-  top: 10px;
+  left: 15px;
+  top: 15px;
 }
