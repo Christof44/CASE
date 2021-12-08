@@ -11,7 +11,8 @@ body {
     clear: both;
 }
 
-.container_header, .container_footer {
+.container_header,
+.container_footer {
     width: 1200px;
     margin: auto;
 }
@@ -94,6 +95,7 @@ footer {
 
 .footer2 img {
     margin: 0 50px;
+    width: 285px;
 }
 
 .footer3 ul li {
@@ -140,11 +142,19 @@ h1 {
 }
 
 .intro1,
-.intro2 p {
+.intro2,
+.barbeque,
+.ontbijt,
+.feestmenu,
+.lente,
+.buffet,
+.food_drinks,
+.bowling,
+.partybowling p {
     text-align: center;
 }
 
-.boeken {
+.boeken button {
     padding: 15px 25px;
     background-color: #a40059;
     border-radius: 15px;
@@ -154,10 +164,6 @@ h1 {
 .boeken a {
     color: white;
     text-decoration: none;
-}
-
-.intro2 button.boeken {
-    margin-left: 112px;
 }
 
 .paars {
@@ -187,11 +193,13 @@ h1 {
     color: #7bbb2b;
 }
 
-.goud{
+.goud {
     color: gold;
 }
 
-.review1, .review2, .review3{
+.review1,
+.review2,
+.review3 {
     width: 125px;
     height: 175px;
     float: left;
@@ -201,50 +209,67 @@ h1 {
     padding: 25px 10px;
 }
 
-.nieuwsbrief{
+.nieuwsbrief {
     text-align: center;
 }
 
-.nieuwsbrief button.inschrijven{
+.nieuwsbrief button.inschrijven {
     padding: 15px 25px;
     background-color: #a40059;
     border-radius: 15px;
     border-style: none;
 }
 
-.inschrijven a{
+.inschrijven a {
     color: white;
     text-decoration: none;
 }
 
 .image-holder {
-  border: 2px solid #76af46;
-  border-radius: 10px;
-  display: inline-block;
-  vertical-align: top;
+    border: 2px solid #76af46;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .image-holder img {
-  position: relative;
-  z-index: -1;
-  left: 10px;
-  top: 10px;
+    position: relative;
+    z-index: -1;
+    left: 10px;
+    top: 10px;
 }
 
 .image-holder2 {
-  border: 2px solid #a40059;
-  border-radius: 10px;
-  display: inline-block;
-  vertical-align: top;
+    border: 2px solid #a40059;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .image-holder2 img {
-  position: relative;
-  z-index: -1;
-  left: 10px;
-  top: 10px;
+    position: relative;
+    z-index: -1;
+    left: 10px;
+    top: 10px;
 }
 
-.border{
+.border {
     border-radius: 10px;
+}
+
+.barbeque,
+.ontbijt,
+.feestmenu,
+.lente,
+.buffet,
+.food_drinks,
+.bowling,
+.partybowling {
+    width: 400px;
+    float: left;
+    margin: 50px 100px;
+}
+
+.boeken {
+    text-align: center;
 }
