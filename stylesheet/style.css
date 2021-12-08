@@ -230,3 +230,7 @@ h1 {
   left: 15px;
   top: 15px;
 }
+
+.border{
+    border-radius: 10px;
+}
