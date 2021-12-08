@@ -217,10 +217,15 @@ h1 {
     text-decoration: none;
 }
 
-img{
-  outline:4px solid #77B244;
-  outline-offset:-100px;
-  border:50px solid transparent;
-  border-width:150px 50px 50px 150px;
-  margin:-75px 0 0 -75px;
+.image-holder {
+  border: 2px solid #76af46;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.image-holder img {
+  position: relative;
+  z-index: -1;
+  left: 10px;
+  top: 10px;
 }
