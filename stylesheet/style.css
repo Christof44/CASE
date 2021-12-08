@@ -23,7 +23,7 @@ header {
 
 
 nav {
-    width: 70%;
+    width: 800px;
     float: left;
     margin-top: 20px;
 }
@@ -37,7 +37,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    margin-right: 25px;
+    margin-right: 45px;
 }
 
 nav a:hover {
@@ -49,7 +49,7 @@ nav a:hover {
 }
 
 .headerlogo {
-    width: 30%;
+    width: 400px;
     float: left;
 }
 
