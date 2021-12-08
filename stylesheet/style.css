@@ -216,3 +216,11 @@ h1 {
     color: white;
     text-decoration: none;
 }
+
+img{
+  outline:4px solid #77B244;
+  outline-offset:-100px;
+  border:50px solid transparent;
+  border-width:150px 50px 50px 150px;
+  margin:-75px 0 0 -75px;
+}
