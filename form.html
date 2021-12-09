@@ -37,60 +37,83 @@
       <div class="formulier1">
         <h1>Reservering</h1>
         <form class="breed" action="get">
-          <p>
-            <label class="required" for="naam">Naam</label>
-            <input class="border" type="text" id="naam" />
-            <span class="error" id="naam_error"></span>
+          <div class="form2colum">
+            <p>
+              <label class="required" for="naam">Naam</label>
+              <input class="border" type="text" id="naam" />
+              <span class="error" id="naam_error"></span>
+            </p>
+            <p>
+              <label class="required" for="telefoon">Telefoon</label>
+              <input class="border" type="text" id="telefoon" />
+              <span class="error" id="telefoon_error"></span>
+            </p>
+            <p>
+              <label class="required" for="aantal_personen"
+                >Aantal personen</label
+              >
+              <select
+                class="border"
+                name="aantal_personen"
+                id="aantal_personen"
+              >
+                <option value="">Selecteer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <span class="error" id="aantal_personen_error"></span>
+            </p>
+            <p>
+              <label class="required" for="datum">Datum</label>
+              <input class="border" type="date" id="datum" />
+              <span class="error" id="datum_error"></span>
+            </p>
+          </div>
 
-            <label for="bedrijf">Bedrijf</label>
-            <input class="border" type="text" id="bedrijf" />
-            <span class="error" id="bedrijf_error"></span>
-          </p>
+          <div class="form2colum">
+            <p>
+              <label for="bedrijf">Bedrijf</label>
+              <input class="border" type="text" id="bedrijf" />
+              <span class="error" id="bedrijf_error"></span>
+            </p>
+            <p>
+              <label class="required" for="email">Email</label>
+              <input class="border" type="text" id="email" />
+              <span class="error" id="email_error"></span>
+            </p>
+            <p>
+              <label class="required" for="keuze_bbq">Keuze BBQ</label>
+              <select class="border" name="keuze_bbq" id="keuze_bbq">
+                <option value="">Selecteer</option>
+                <option value="formule_1">Formule 1</option>
+                <option value="formule_2">Formule 2</option>
+                <option value="formule_3">Formule 3</option>
+                <option value="bbq_kids">BBQ 4 kids</option>
+                <option value="vegie_bbq">Vegitarian BBQ</option>
+              </select>
+              <span class="error" id="keuze_bbq_error"></span>
+            </p>
+            <p>
+              <label class="required" for="uur">Tijdstip</label>
+              <input
+                class="border"
+                type="time"
+                id="uur"
+                min="16:00"
+                max="19:00"
+              />
+              <span class="error" id="uur_error"></span>
+            </p>
+          </div>
           <p>
-            <label class="required" for="telefoon">Telefoon</label>
-            <input class="border" type="text" id="telefoon" />
-            <span class="error" id="telefoon_error"></span>
-
-            <label class="required" for="email">Email</label>
-            <input class="border" type="text" id="email" />
-            <span class="error" id="email_error"></span>
-          </p>
-          <p>
-            <label class="required" for="aantal_personen">Aantal personen</label>
-            <select class="border" name="aantal_personen" id="aantal_personen">
-              <option value="">Selecteer</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <span class="error" id="aantal_personen_error"></span>
-
-            <label class="required" for="keuze_bbq">Keuze BBQ</label>
-            <select class="border" name="keuze_bbq" id="keuze_bbq">
-              <option value="">Selecteer</option>
-              <option value="formule_1">Formule 1</option>
-              <option value="formule_2">Formule 2</option>
-              <option value="formule_3">Formule 3</option>
-              <option value="bbq_kids">BBQ 4 kids</option>
-              <option value="vegie_bbq">Vegitarian BBQ</option>
-            </select>
-            <span class="error" id="keuze_bbq_error"></span>
-          </p>
-          <p>
-            <label class="required" for="datum">Datum</label>
-            <input class="border" type="date" id="datum" />
-            <span class="error" id="datum_error"></span>
-
-            <label class="required" for="uur">Tijdstip</label>
-            <input class="border" type="time" id="uur" min="16:00" max="19:00" />
-            <span class="error" id="uur_error"></span>
-          </p>
-          <p>
-            <label for="bericht">Bericht</label><br>
-            <textarea class="border"
+            <label for="bericht">Bericht</label><br />
+            <textarea
+              class="border"
+              placeholder=" Vul hier je bericht in..."
               name="bericht"
               id="bericht"
               cols="30"
@@ -98,7 +121,8 @@
             ></textarea>
           </p>
           <p>
-            <input class="border"
+            <input
+              class="border verzend2"
               type="button"
               value="Verstuur"
               id="button_verstuur"

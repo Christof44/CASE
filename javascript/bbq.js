@@ -9,10 +9,11 @@ let geselecteerdeKeuze;
 let datumTxt;
 let uurTxt;
 let allesCorrectIngevuld = true;
+let link;
 
 // controle naam
 function controleerVoorwaardenNaam() {
-    if (naamTxt.length > 0) {
+    if (naamTxt.length < 2) {
        document.getElementById("naam_error").innerHTML =
           "Minstens 2 karakters lang!";
        allesCorrectIngevuld = false;
@@ -23,7 +24,7 @@ function controleerVoorwaardenNaam() {
 
 // controle bedrijf
 function controleerVoorwaardenBedrijf() {
-    if (bedrijfTxt.length > 0) {
+    if (bedrijfTxt.length < 2 && bedrijfTxt.length > 0) {
        document.getElementById("bedrijf_error").innerHTML =
           "Minstens 2 karakters lang!";
        allesCorrectIngevuld = false;
@@ -34,7 +35,7 @@ function controleerVoorwaardenBedrijf() {
 
 // controle bedrijf
 function controleerVoorwaardenTelefoon() {
-    if (telefoonTxt.search(/^\d{15}$/) == -1) {
+    if (telefoonTxt.search(/^\d{9,15}$/) == -1) {
        document.getElementById("telefoon_error").innerHTML =
           "Geen geldig telefoon nummer";
        allesCorrectIngevuld = false;
@@ -132,6 +133,10 @@ function verstuur() {
     }
 
     if (allesCorrectIngevuld) {
-        document.write("Good job")
+      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
+      encodeURIComponent("Reservering BBQ") +
+      "&body=" +
+      "Beste: " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + '%0D%0D' + "Met vriendelijke groet%0D" + "Sportagon";
+      window.location.href = link; 
     }
 }
