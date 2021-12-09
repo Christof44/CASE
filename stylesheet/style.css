@@ -150,7 +150,10 @@ h1 {
 .buffet,
 .food_drinks,
 .bowling,
-.partybowling, .bowling_arrangement, .binnenspeeltuin, .multisport p {
+.partybowling,
+.bowling_arrangement,
+.binnenspeeltuin,
+.multisport p {
     text-align: center;
 }
 
@@ -278,8 +281,48 @@ h1 {
     text-align: center;
 }
 
-.bowling_arrangement, .binnenspeeltuin, .multisport{
-width: 300px;
-float: left;
-padding: 50 px 50px;
+.bowling_arrangement,
+.binnenspeeltuin,
+.multisport {
+    width: 300px;
+    float: left;
+    margin: 50px 50px;
+}
+
+.binnenspeeltuin h1,
+.multisport h1{
+margin-bottom: 57px;
+}
+
+.image-holder3 {
+    border: 2px solid #a40059;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 298;
+    height: 247;
+}
+
+.image-holder3 img {
+    position: relative;
+    z-index: -1;
+    left: 10px;
+    top: 10px;
+}
+
+.informatie button{
+     padding: 15px 25px;
+     margin-top: 25px;
+    background-color: #76af46;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.informatie{
+    text-align: center;
+}
+
+.informatie a{
+    text-decoration: none;
+    color: white;
 }
