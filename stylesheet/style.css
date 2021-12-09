@@ -383,7 +383,7 @@ h2::first-letter {
 
 .required:after {
     content: " *";
-    color: red;
+    color: #a40059;
 }
 
 .verzend {
@@ -431,4 +431,30 @@ h2::first-letter {
 .bier h2,
 .ladies h2 {
     text-align: center;
+}
+
+.formulier_reservering {
+    background-color: grey;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.formulier_reservering p {
+    text-align: left;
+}
+
+.form2colum {
+    width: 50%;
+    float: left;
+}
+
+.verzend_formulier {
+    padding: 15px 25px;
+    margin: 25px 0 50px 25px;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
 }

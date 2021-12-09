@@ -1,209 +1,167 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="stylesheet/style.css" />
-    <script
-      src="https://kit.fontawesome.com/8bfea4e4a4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="javascript/bbq.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="container_header">
-        <div class="headerlogo cf">
-          <img src="images/logo.png" alt="Logo" />
-        </div>
-        <div class="headermenu cf">
-          <nav>
-            <ul>
-              <li><a class="current" href="index.html">Home</a></li>
-              <li><a href="smaakvol.html">Smaakvol</a></li>
-              <li><a href="plezier.html">Plezier</a></li>
-              <li><a href="kinderfeest.html">Kinderfeest</a></li>
-              <li><a href="bedrijf.html">Bedrijf</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="stylesheet/style.css" />
+  <script src="https://kit.fontawesome.com/8bfea4e4a4.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript/bbq.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container_header">
+      <div class="headerlogo cf">
+        <img src="images/logo.png" alt="Logo" />
       </div>
-    </header>
-
-    <div class="container">
-      <div class="formulier1">
-        <h1>Reservering</h1>
-        <form class="breed" action="get">
-          <div class="form2colum">
-            <p>
-              <label class="required" for="naam">Naam</label>
-              <input class="border" type="text" id="naam" />
-              <span class="error" id="naam_error"></span>
-            </p>
-            <p>
-              <label class="required" for="telefoon">Telefoon</label>
-              <input class="border" type="text" id="telefoon" />
-              <span class="error" id="telefoon_error"></span>
-            </p>
-            <p>
-              <label class="required" for="aantal_personen"
-                >Aantal personen</label
-              >
-              <select
-                class="border"
-                name="aantal_personen"
-                id="aantal_personen"
-              >
-                <option value="">Selecteer</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-              </select>
-              <span class="error" id="aantal_personen_error"></span>
-            </p>
-            <p>
-              <label class="required" for="datum">Datum</label>
-              <input class="border" type="date" id="datum" />
-              <span class="error" id="datum_error"></span>
-            </p>
-          </div>
-
-          <div class="form2colum">
-            <p>
-              <label for="bedrijf">Bedrijf</label>
-              <input class="border" type="text" id="bedrijf" />
-              <span class="error" id="bedrijf_error"></span>
-            </p>
-            <p>
-              <label class="required" for="email">Email</label>
-              <input class="border" type="text" id="email" />
-              <span class="error" id="email_error"></span>
-            </p>
-            <p>
-              <label class="required" for="keuze_bbq">Keuze BBQ</label>
-              <select class="border" name="keuze_bbq" id="keuze_bbq">
-                <option value="">Selecteer</option>
-                <option value="formule_1">Formule 1</option>
-                <option value="formule_2">Formule 2</option>
-                <option value="formule_3">Formule 3</option>
-                <option value="bbq_kids">BBQ 4 kids</option>
-                <option value="vegie_bbq">Vegitarian BBQ</option>
-              </select>
-              <span class="error" id="keuze_bbq_error"></span>
-            </p>
-            <p>
-              <label class="required" for="uur">Tijdstip</label>
-              <input
-                class="border"
-                type="time"
-                id="uur"
-                min="16:00"
-                max="19:00"
-              />
-              <span class="error" id="uur_error"></span>
-            </p>
-          </div>
-          <p>
-            <label for="bericht">Bericht</label><br />
-            <textarea
-              class="border"
-              placeholder=" Vul hier je bericht in..."
-              name="bericht"
-              id="bericht"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </p>
-          <p>
-            <input
-              class="border verzend2"
-              type="button"
-              value="Verstuur"
-              id="button_verstuur"
-              onclick="verstuur()"
-            />
-          </p>
-        </form>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container_footer">
-        <div class="footer1 cf">
+      <div class="headermenu cf">
+        <nav>
           <ul>
-            <li>
-              <p>Adres</p>
-              <p>Sportlaan 5 - 3980 Tessenderlo</p>
-            </li>
-            <li>
-              <p>Telefoon</p>
-              <p><a href="tel:+32 13 66 78 04">+32 13 66 78 04</a></p>
-            </li>
-            <li>
-              <p>Email</p>
-              <p><a href="mailto:info@sportagon.be">info@sportagon.be</a></p>
-            </li>
-            <li>
-              <a href="https://twitter.com/SportagonB" target="blank"
-                ><img
-                  class="twitter"
-                  src="images/twitter.png"
-                  alt="twitter logo"
-              /></a>
-              <a href="https://www.facebook.com/sportagon" target="blank"
-                ><img src="images/facebook.png" alt="facebook logo"
-              /></a>
-              <a
-                href="https://www.youtube.com/channel/UClZbLPa_UMFgg58ZqRrt2Tg"
-                target="blank"
-                ><img src="images/youtube.png" alt="youtube logo"
-              /></a>
-              <a
-                href="https://www.pinterest.com/sportagonbe/_saved/"
-                target="blank"
-                ><img src="images/pinterest.png" alt="pinterest logo"
-              /></a>
-              <a
-                href="https://www.linkedin.com/company/sportagonbe/"
-                target="blank"
-                ><img src="images/instagram.png" alt="instagram logo"
-              /></a>
-              <a
-                href="https://www.linkedin.com/company/sportagonbe/"
-                target="blank"
-                ><img src="images/linkedin.png" alt="linkedin logo"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer2 cf">
-          <img src="images/logo.png" alt="logo" />
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.783360392711!2d5.0856614157541316!3d51.0755490795665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1378eea670b83%3A0x5474c08c4189356e!2sSportlaan%205%2C%203980%20Tessenderlo!5e0!3m2!1sen!2sbe!4v1638953561628!5m2!1sen!2sbe"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-        <div class="footer3 cf">
-          <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="index.html">Home</a></li>
             <li><a href="smaakvol.html">Smaakvol</a></li>
             <li><a href="plezier.html">Plezier</a></li>
-            <li><a href="kinderfeest.html">Kindefeest</a></li>
+            <li><a href="kinderfeest.html">Kinderfeest</a></li>
             <li><a href="bedrijf.html">Bedrijf</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </footer>
-  </body>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="formulier_reservering">
+      <h1>Reservering</h1>
+      <form class="breed" action="get">
+        <div class="form2colum">
+          <p>
+            <label class="required" for="naam">Naam</label>
+            <input class="border" type="text" id="naam" />
+            <span class="error" id="naam_error"></span>
+          </p>
+          <p>
+            <label class="required" for="telefoon">Telefoon</label>
+            <input class="border" type="text" id="telefoon" />
+            <span class="error" id="telefoon_error"></span>
+          </p>
+          <p>
+            <label class="required" for="aantal_personen">Aantal personen</label>
+            <select class="border" name="aantal_personen" id="aantal_personen">
+              <option value="">Selecteer</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <span class="error" id="aantal_personen_error"></span>
+          </p>
+          <p>
+            <label class="required" for="datum">Datum</label>
+            <input class="border" type="date" id="datum" />
+            <span class="error" id="datum_error"></span>
+          </p>
+        </div>
+
+        <div class="form2colum">
+          <p>
+            <label for="bedrijf">Bedrijf</label>
+            <input class="border" type="text" id="bedrijf" />
+            <span class="error" id="bedrijf_error"></span>
+          </p>
+          <p>
+            <label class="required" for="email">Email</label>
+            <input class="border" type="text" id="email" />
+            <span class="error" id="email_error"></span>
+          </p>
+          <p>
+            <label class="required" for="keuze_bbq">Keuze BBQ</label>
+            <select class="border" name="keuze_bbq" id="keuze_bbq">
+              <option value="">Selecteer</option>
+              <option value="formule_1">Formule 1</option>
+              <option value="formule_2">Formule 2</option>
+              <option value="formule_3">Formule 3</option>
+              <option value="bbq_kids">BBQ 4 kids</option>
+              <option value="vegie_bbq">Vegitarian BBQ</option>
+            </select>
+            <span class="error" id="keuze_bbq_error"></span>
+          </p>
+          <p>
+            <label class="required" for="uur">Tijdstip</label>
+            <input class="border" type="time" id="uur" min="16:00" max="19:00" />
+            <span class="error" id="uur_error"></span>
+          </p>
+          
+        </div>
+        <p>
+          <label for="bericht">Bericht</label><br />
+          <textarea class="border" placeholder=" Vul hier je bericht in..." name="bericht" id="bericht" cols="80"
+            rows="5"></textarea>
+        </p>
+        <p>
+          <label for="privacy">Privacybeleid</label>
+          <input type="checkbox" name="privacy" id="privacy">
+          <span class="error" id="privacy_error"></span>
+
+          <input class="border verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container_footer">
+      <div class="footer1 cf">
+        <ul>
+          <li>
+            <p>Adres</p>
+            <p>Sportlaan 5 - 3980 Tessenderlo</p>
+          </li>
+          <li>
+            <p>Telefoon</p>
+            <p><a href="tel:+32 13 66 78 04">+32 13 66 78 04</a></p>
+          </li>
+          <li>
+            <p>Email</p>
+            <p><a href="mailto:info@sportagon.be">info@sportagon.be</a></p>
+          </li>
+          <li>
+            <a href="https://twitter.com/SportagonB" target="blank"><img class="twitter" src="images/twitter.png"
+                alt="twitter logo" /></a>
+            <a href="https://www.facebook.com/sportagon" target="blank"><img src="images/facebook.png"
+                alt="facebook logo" /></a>
+            <a href="https://www.youtube.com/channel/UClZbLPa_UMFgg58ZqRrt2Tg" target="blank"><img
+                src="images/youtube.png" alt="youtube logo" /></a>
+            <a href="https://www.pinterest.com/sportagonbe/_saved/" target="blank"><img src="images/pinterest.png"
+                alt="pinterest logo" /></a>
+            <a href="https://www.linkedin.com/company/sportagonbe/" target="blank"><img src="images/instagram.png"
+                alt="instagram logo" /></a>
+            <a href="https://www.linkedin.com/company/sportagonbe/" target="blank"><img src="images/linkedin.png"
+                alt="linkedin logo" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer2 cf">
+        <img src="images/logo.png" alt="logo" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.783360392711!2d5.0856614157541316!3d51.0755490795665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1378eea670b83%3A0x5474c08c4189356e!2sSportlaan%205%2C%203980%20Tessenderlo!5e0!3m2!1sen!2sbe!4v1638953561628!5m2!1sen!2sbe"
+          width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer3 cf">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="smaakvol.html">Smaakvol</a></li>
+          <li><a href="plezier.html">Plezier</a></li>
+          <li><a href="kinderfeest.html">Kindefeest</a></li>
+          <li><a href="bedrijf.html">Bedrijf</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

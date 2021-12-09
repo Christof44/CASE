@@ -33,7 +33,7 @@ function controleerVoorwaardenBedrijf() {
     }
 }
 
-// controle bedrijf
+// controle telefoon
 function controleerVoorwaardenTelefoon() {
     if (telefoonTxt.search(/^\d{9,15}$/) == -1) {
        document.getElementById("telefoon_error").innerHTML =
@@ -44,6 +44,7 @@ function controleerVoorwaardenTelefoon() {
     }
 }
 
+// controle email
 function controleerVoorwaardenEmail() {
     let regExp =
        /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
@@ -56,6 +57,7 @@ function controleerVoorwaardenEmail() {
     }
 }
 
+// hoofdfunctie
 function verstuur() {
     naamTxt = document.getElementById("naam").value;
     bedrijfTxt = document.getElementById("bedrijf").value;
@@ -132,11 +134,11 @@ function verstuur() {
         document.getElementById("uur_error").innerHTML = "";
     }
 
-    if (allesCorrectIngevuld) {
-      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
-      encodeURIComponent("Reservering BBQ") +
-      "&body=" +
-      "Beste: " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + '%0D%0D' + "Met vriendelijke groet%0D" + "Sportagon";
-      window.location.href = link; 
-    }
+   //  if (allesCorrectIngevuld) {
+   //      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
+   //      encodeURIComponent("Reservering BBQ") +
+   //      "&body=" +
+   //      "Beste: " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + '%0D%0D' + "Met vriendelijke groet%0D" + "Sportagon";
+   //      window.location.href = link; 
+   //  }
 }
