@@ -273,7 +273,11 @@ p {
 .binnenspeeltuin2,
 .communie,
 .minigolf,
-.kinderfeest {
+.kinderfeest,
+.team,
+.vergader,
+.seminarie,
+.bedrijfevent {
     width: 400px;
     float: left;
     margin: 50px 100px;
