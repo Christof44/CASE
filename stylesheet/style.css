@@ -260,6 +260,7 @@ p {
 
 .border {
     border-radius: 10px;
+    border-style: none;
 }
 
 .barbeque,
@@ -334,5 +335,62 @@ p {
 
 .informatie a {
     text-decoration: none;
+    color: white;
+}
+
+.gegevens,
+.formulier {
+    width: 600px;
+    float: left;
+}
+
+.gegevens p {
+    text-align: left;
+}
+
+.gegevens h1 {
+    text-align: left;
+}
+
+.gegevens a {
+    text-decoration: none;
+    color: #7bbb2b;
+}
+
+h2::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: #7bbb2b;
+}
+
+.formulier {
+    background-color: grey;
+}
+
+.formulier p {
+    text-align: left;
+}
+
+.formulier p::first-letter {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #7bbb2b;
+}
+
+.breed {
+    padding-left: 100px;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+.verzend {
+    padding: 15px 25px;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+    margin-left: 100px;
     color: white;
 }

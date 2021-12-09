@@ -29,8 +29,34 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <p><span>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Aut minima soluta vel, suscipit. Nihil aperiam a, ipsa possimus deserunt exercitationem veritatis assumenda modi quis distinctio. Aspernatur beatae eaque iure, rerum.</span></p>
+        <div class="container cf">
+            <div class="gegevens">
+                <h1>Contactgegevens</h1>
+                <h2>Adres</h2>
+                <p>Sportlaan 5<br>
+                    3980 Tessenderlo</p>
+                <h2>Telefoon</h2>
+                <p><a href="tel:+32 13 66 78 04">+32 13 66 78 04</a></p>
+                <h2>E-mail</h2>
+                <p><a href="mailto:info@sportagon.be">info@sportagon.be</a></p>
+            </div>
+            <div class="formulier">
+                <h1>Contactformulier</h1>
+                <form class="breed" action="get">
+                    <p><label class="required" for="naam">Naam:</label></p>
+                    <p><input class="border" type="text" name="naam" id="naam" required></p>
+                    <p><label for="bedrijf">Bedrijf:</label></p>
+                    <p><input class="border" type="text" name="bedrijf" id="bedrijf"></p>
+                    <p><label class="required" for="email">E-mail:</label></p>
+                    <p><input class="border" type="email" name="email" id="email" required></p>
+                    <p class="required">Jouw bericht</p>
+                    <textarea class="border" name="Message" id="" cols="40" rows="10"></textarea>
+                    <p><label class="required" for="accept">Accepteer:</label>
+                        <input type="checkbox" name="accept" id="accept">
+                        <label for="submit"></label>
+                        <input class="verzend" type="submit" value="Versturen"></p>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
@@ -63,7 +89,6 @@
                 <img src="images/logo.png" alt="logo">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.783360392711!2d5.0856614157541316!3d51.0755490795665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1378eea670b83%3A0x5474c08c4189356e!2sSportlaan%205%2C%203980%20Tessenderlo!5e0!3m2!1sen!2sbe!4v1638953561628!5m2!1sen!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            
             <div class="footer3 cf">
                 <ul>
                     <li><a href="index.html">Home</a></li>
