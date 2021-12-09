@@ -150,7 +150,7 @@ h1 {
 .buffet,
 .food_drinks,
 .bowling,
-.partybowling p {
+.partybowling, .bowling_arrangement, .binnenspeeltuin, .multisport p {
     text-align: center;
 }
 
@@ -276,4 +276,10 @@ h1 {
 
 .boeken {
     text-align: center;
+}
+
+.bowling_arrangement, .binnenspeeltuin, .multisport{
+width: 300px;
+float: left;
+padding: 50 px 50px;
 }
