@@ -395,11 +395,38 @@ h2::first-letter {
     color: white;
 }
 
-.sportbar, .keuken, .opening{
+.sportbar,
+.keuken,
+.opening {
     width: 400px;
     float: left;
 }
 
 .error {
     color: #a40059;
+}
+
+.prijzen,
+.kids,
+.disco,
+.students,
+.bier,
+.ladies {
+    width: 300px;
+    height: 400px;
+    float: left;
+    background-color: grey;
+    margin: 50px 50px;
+}
+
+.prijzen p {
+    margin-top: 60px;
+}
+
+.kids p {
+    margin: 60px 70px 0;
+}
+
+.students h2, .bier h2, .ladies h2{
+    text-align: center;
 }
