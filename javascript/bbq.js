@@ -133,10 +133,10 @@ function verstuur() {
     }
 
     if (allesCorrectIngevuld) {
-        link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
-        encodeURIComponent("Reservering BBQ") +
-        "&body=" +
-        "Beste: " + encodeURIComponent(naamTxt) + "Dank u om voor Sportagon te kiezen." + "Uw reservering is gelukt. We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + "Met vriendelijke groet" + "Sportagon";
-        window.location.href = link; 
+      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
+      encodeURIComponent("Reservering BBQ") +
+      "&body=" +
+      "Beste: " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + '%0D%0D' + "Met vriendelijke groet%0D" + "Sportagon";
+      window.location.href = link; 
     }
 }
