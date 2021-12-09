@@ -427,6 +427,8 @@ h2::first-letter {
     margin: 60px 70px 0;
 }
 
-.students h2, .bier h2, .ladies h2{
+.students h2,
+.bier h2,
+.ladies h2 {
     text-align: center;
 }
