@@ -399,3 +399,7 @@ h2::first-letter {
     width: 400px;
     float: left;
 }
+
+.error {
+    color: #a40059;
+}
