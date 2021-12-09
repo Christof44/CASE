@@ -394,3 +394,8 @@ h2::first-letter {
     margin-left: 100px;
     color: white;
 }
+
+.sportbar, .keuken, .opening{
+    width: 400px;
+    float: left;
+}
