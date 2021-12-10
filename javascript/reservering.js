@@ -10,6 +10,7 @@ let datumTxt;
 let uurTxt;
 let allesCorrectIngevuld = true;
 let link;
+let privacyCheck;
 
 // controle naam
 function controleerVoorwaardenNaam() {
@@ -69,6 +70,7 @@ function verstuur() {
     keuzeTxt = document.getElementById("keuze").value;
     datumTxt = document.getElementById("datum").value;
     uurTxt = document.getElementById("uur").value;
+    privacyCheck = document.getElementById("privacy");
 
     allesCorrectIngevuld = true;
 
@@ -133,6 +135,14 @@ function verstuur() {
      } else {
         document.getElementById("uur_error").innerHTML = "";
     }
+
+    //controle privacy check
+    if (privacyCheck.checked) {
+      document.getElementById("privacy_error").innerHTML = "";
+   } else {
+      document.getElementById("privacy_error").innerHTML = "*";
+      allesCorrectIngevuld = false;
+   }
 
    //  if (allesCorrectIngevuld) {
    //      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
