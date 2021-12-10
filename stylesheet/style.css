@@ -493,7 +493,11 @@ h2::first-letter {
 .formule1,
 .formule2,
 .menu_lente,
-.prijs_lente {
+.prijs_lente,
+.team2,
+.voorbeeld,
+.prijs_binnenspeeltuin,
+.combi {
     width: 300px;
     height: 400px;
     background-color: grey;
@@ -575,7 +579,7 @@ button.info {
     margin-top: 85px;
 }
 
-.info2 p {
+.info2 p{
     padding: 75px 50px 0;
 }
 
@@ -589,10 +593,35 @@ button.info {
 
 .formule1 p,
 .formule2 p,
-.prijs_lente p {
+.prijs_lente p,
+.prijs_binnenspeeltuin p,
+.combi p {
     padding-top: 50px;
 }
 
 .menu_lente p{
     padding-top: 35px;
+}
+
+.contacteer{
+    padding: 15px 25px;
+    margin: 25px 0 50px 25px;
+    background-color: #76af46;
+    border-radius: 15px;
+    border-style: none;
+    
+}
+
+button.contacteer{
+    margin-left: 80px;
+}
+
+.contacteer a{
+    color: white;
+    text-decoration: none;
+}
+
+.team2 p,
+.voorbeeld p{
+    padding: 75px 50px;
 }
