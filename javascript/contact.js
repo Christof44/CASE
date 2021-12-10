@@ -1,3 +1,5 @@
+"use strict";
+
 let naamTxt;
 let bedrijfTxt;
 let emailTxt;
@@ -76,4 +78,12 @@ function verstuur() {
         document.getElementById("privacy_error").innerHTML = "*";
         allesCorrectIngevuld = false;
      }
+
+     if (allesCorrectIngevuld) {
+      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
+      encodeURIComponent("Meer informatie") +
+      "&body=" +
+      "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
+      window.location.href = link; 
+ }
 }
