@@ -65,10 +65,8 @@ function verstuur() {
     emailTxt = document.getElementById("email").value;
     geselecteerdeAantal = document.getElementById("aantal_personen").selectedIndex;
     aantalpersonenTxt = document.getElementById("aantal_personen").value;
-// Verander hier de keuze_bbq naar wat je het in de form genoemd hebt
-    geselecteerdeKeuze = document.getElementById("keuze_bbq").selectedIndex;
-    keuzeTxt = document.getElementById("keuze_bbq").value;
-// ---
+    geselecteerdeKeuze = document.getElementById("keuze").selectedIndex;
+    keuzeTxt = document.getElementById("keuze").value;
     datumTxt = document.getElementById("datum").value;
     uurTxt = document.getElementById("uur").value;
 
@@ -112,13 +110,12 @@ function verstuur() {
         document.getElementById("aantal_personen_error").innerHTML = "";
     }
 
-// Verander hier de keuze_bbq naar wat je het in de form genoemd hebt
     //controle geselecteerde keuze
     if (geselecteerdeKeuze == 0) {
-        document.getElementById("keuze_bbq_error").innerHTML = "Kies a.u.b.";
+        document.getElementById("keuze_error").innerHTML = "Kies a.u.b.";
         allesCorrectIngevuld = false;
      } else {
-        document.getElementById("keuze_bbq_error").innerHTML = "";
+        document.getElementById("keuze_error").innerHTML = "";
     }
 
     //controle geselecteerde datum

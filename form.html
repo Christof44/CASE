@@ -7,7 +7,9 @@
   <title>Home</title>
   <link rel="stylesheet" href="stylesheet/style.css" />
   <script src="https://kit.fontawesome.com/8bfea4e4a4.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="javascript/bbq.js"></script>
+  <!-- Dit moet je hebben voor het script te lade op pagina -->
+  <script type="text/javascript" src="javascript/reservering.js"></script>
+  <!-- ^^^ -->
 </head>
 
 <body>
@@ -33,7 +35,7 @@
 
 
   <!-- copy van hier -->
-  <!-- Verander de Keuze_bbq en opties naar de passende voor het onderwerp -->
+  <!-- Verander de opties van keuze naar de passende voor het onderwerp -->
   <div class="container">
     <div class="formulier_reservering">
       <h1>Reservering</h1>
@@ -81,8 +83,8 @@
             <span class="error" id="email_error"></span>
           </p>
           <p>
-            <label class="required" for="keuze_bbq">Keuze BBQ</label>
-            <select class="border" name="keuze_bbq" id="keuze_bbq">
+            <label class="required" for="keuze">Keuze BBQ</label>
+            <select class="border" name="keuze" id="keuze">
               <option value="">Selecteer</option>
               <option value="formule_1">Formule 1</option>
               <option value="formule_2">Formule 2</option>
@@ -90,7 +92,7 @@
               <option value="bbq_kids">BBQ 4 kids</option>
               <option value="vegie_bbq">Vegitarian BBQ</option>
             </select>
-            <span class="error" id="keuze_bbq_error"></span>
+            <span class="error" id="keuze_error"></span>
           </p>
           <p>
             <label class="required" for="uur">Tijdstip</label>
