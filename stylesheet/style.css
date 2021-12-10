@@ -464,9 +464,9 @@ h2::first-letter {
 }
 
 .menu2colum {
-    width: 46%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 44%;
+    padding-left: 3%;
+    padding-right: 3%;
     float: left;
 }
 
@@ -475,10 +475,16 @@ h2::first-letter {
     padding-left: 25px;
 }
 
+.menu2colum h2 {
+    margin: 40px 0 0;
+    color: #a40059;
+}
+
 .menukaart {
     width: 800px;
     margin: auto;
-    background-color: grey;
+    background-color: #FCE5AB;
+    padding: 20px 30px 50px;
 }
 
 .menulinks {
