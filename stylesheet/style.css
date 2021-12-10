@@ -475,9 +475,10 @@ h2::first-letter {
     padding-left: 25px;
 }
 
-.menu2colum h2 {
+.menu2colum h3 {
     margin: 40px 0 0;
     color: #a40059;
+    font-size: 2em;
 }
 
 .menukaart {
