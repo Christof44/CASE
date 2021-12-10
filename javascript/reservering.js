@@ -1,3 +1,5 @@
+"use strict";
+
 let naamTxt;
 let bedrijfTxt;
 let telefoonTxt;
@@ -8,9 +10,12 @@ let keuzeTxt;
 let geselecteerdeKeuze;
 let datumTxt;
 let uurTxt;
+let berichtTxt;
+let privacyCheck;
+
 let allesCorrectIngevuld = true;
 let link;
-let privacyCheck;
+
 
 // controle naam
 function controleerVoorwaardenNaam() {
@@ -70,6 +75,7 @@ function verstuur() {
     keuzeTxt = document.getElementById("keuze").value;
     datumTxt = document.getElementById("datum").value;
     uurTxt = document.getElementById("uur").value;
+    berichtTxt = document.getElementById("bericht").value;
     privacyCheck = document.getElementById("privacy");
 
     allesCorrectIngevuld = true;
@@ -144,11 +150,11 @@ function verstuur() {
       allesCorrectIngevuld = false;
    }
 
-   //  if (allesCorrectIngevuld) {
-   //      link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
-   //      encodeURIComponent("Reservering BBQ") +
-   //      "&body=" +
-   //      "Beste: " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt) + encodeURIComponent(uurTxt) + '%0D%0D' + "Met vriendelijke groet%0D" + "Sportagon";
-   //      window.location.href = link; 
-   //  }
+    if (allesCorrectIngevuld) {
+        link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
+        encodeURIComponent("Reservering") +
+        "&body=" +
+        "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen " + encodeURIComponent(geselecteerdeKeuze) + " voor " + encodeURIComponent(geselecteerdeAantal) + "personen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt)+ " " + encodeURIComponent(uurTxt) + '%0D%0D' + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
+        window.location.href = link; 
+   }
 }
