@@ -344,6 +344,10 @@ p {
     float: left;
 }
 
+.formulier {
+    border-radius: 50px;
+}
+
 .gegevens p {
     text-align: left;
 }

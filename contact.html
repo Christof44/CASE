@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <script type="text/javascript" src="javascript/contact.js"></script>
 </head>
 
 <body>
@@ -43,18 +44,35 @@
             <div class="formulier">
                 <h1>Contactformulier</h1>
                 <form class="breed" action="get">
-                    <p><label class="required" for="naam">Naam:</label></p>
-                    <p><input class="border" type="text" name="naam" id="naam" required></p>
-                    <p><label for="bedrijf">Bedrijf:</label></p>
-                    <p><input class="border" type="text" name="bedrijf" id="bedrijf"></p>
-                    <p><label class="required" for="email">E-mail:</label></p>
-                    <p><input class="border" type="email" name="email" id="email" required></p>
-                    <p class="required">Jouw bericht</p>
-                    <textarea class="border" name="Message" id="" cols="40" rows="10"></textarea>
-                    <p><label class="required" for="accept">Accepteer:</label>
-                        <input type="checkbox" name="accept" id="accept">
-                        <label for="submit"></label>
-                        <input class="verzend" type="submit" value="Versturen"></p>
+                    <p>
+                        <label class="required" for="naam">Naam</label><br>
+                        <input class="border" type="text" id="naam">
+                        <span class="error" id="naam_error"></span>
+                    </p>
+
+                    <p>
+                        <label for="bedrijf">Bedrijf</label><br>
+                        <input class="border" type="text" id="bedrijf">
+                        <span class="error" id="bedrijf_error"></span>
+                    </p>
+
+                    <p>
+                        <label class="required" for="email">E-mail</label><br>
+                        <input class="border" type="email" id="email">
+                        <span class="error" id="email_error"></span>
+                    </p>
+
+                    <p>
+                        <label for="bericht">Uw bericht</label><br>
+                        <textarea class="border" id="" placeholder=" Vul hier je bericht of verdere info in..." cols="40" rows="10"></textarea>
+                    </p>
+                    <p>
+                        <label for="privacy">Privacybeleid:</label>
+                        <input type="checkbox" id="privacy">
+                        <span class="error" id="privacy_error"></span>
+
+                        <input class="border verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
+                    </p>
                 </form>
             </div>
         </div>
