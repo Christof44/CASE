@@ -117,7 +117,7 @@ footer {
     margin: 50px 320px;
 }
 
-.video1{
+.video1 {
     margin-bottom: 50px;
 }
 
@@ -631,7 +631,7 @@ button.info {
     margin-top: 85px;
 }
 
-.info2 p{
+.info2 p {
     padding: 75px 50px 0;
 }
 
@@ -651,34 +651,34 @@ button.info {
     padding-top: 50px;
 }
 
-.menu_lente p{
+.menu_lente p {
     padding-top: 35px;
 }
 
-.contacteer{
+.contacteer {
     padding: 15px 25px;
     margin: 25px 0 50px 25px;
     background-color: #76af46;
     border-radius: 15px;
     border-style: none;
-    
+
 }
 
-button.contacteer{
+button.contacteer {
     margin-left: 80px;
 }
 
-.contacteer a{
+.contacteer a {
     color: white;
     text-decoration: none;
 }
 
 .team2 p,
-.voorbeeld p{
+.voorbeeld p {
     padding: 75px 50px;
 }
 
-.menukaart2{
+.menukaart2 {
     padding: 25px 45px;
     margin: 50px 0;
     background-color: #a40059;
@@ -686,11 +686,79 @@ button.contacteer{
     border-style: none;
 }
 
-.menukaart2 a{
+.menukaart2 a {
     text-decoration: none;
     color: white;
 }
 
-button.menukaart2{
+button.menukaart2 {
     margin-left: 570px;
+}
+
+.container_nieuwsbrief {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.container_nieuwsbrief p {
+    text-align: left;
+    margin-right: 25px;
+}
+
+.brief {
+    padding: 25px 45px;
+    margin: 50px 0;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.inschrijven_nieuwsbrief {
+    width: 600px;
+    float: left;
+}
+
+.inschrijven_nieuwsbrief h1{
+    margin: 0 150px;
+}
+
+.inschrijven_nieuwsbrief p{
+    margin: 50px 150px;
+    font-size: 24px;
+}
+
+.center {
+    width: 600px;
+    float: left;
+}
+
+.groene_letter{
+    color: #76af46;
+    font-size: 35px;
+}
+
+#mc_embed_signup {
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
+
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
 }
