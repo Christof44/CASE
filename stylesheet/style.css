@@ -117,6 +117,10 @@ footer {
     margin: 50px 320px;
 }
 
+.video1{
+    margin-bottom: 50px;
+}
+
 .groen {
     height: 5px;
     border-width: 0;
@@ -672,4 +676,21 @@ button.contacteer{
 .team2 p,
 .voorbeeld p{
     padding: 75px 50px;
+}
+
+.menukaart2{
+    padding: 25px 45px;
+    margin: 50px 0;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.menukaart2 a{
+    text-decoration: none;
+    color: white;
+}
+
+button.menukaart2{
+    margin-left: 570px;
 }
