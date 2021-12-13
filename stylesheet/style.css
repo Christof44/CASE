@@ -7,6 +7,10 @@ body {
     font-family: Vollkorn;
 }
 
+p{
+    font-size: 1.2em;
+}
+
 .cf:after {
     content: "";
     display: table;
