@@ -63,6 +63,18 @@ function controleerVoorwaardenEmail() {
     }
 }
 
+// controle tijdstip
+function controleerVoorwaardenUur() {
+   let regExp2 = /(1[3-9]|20):([0-5][0-9])/;
+   if (regExp2.test(uurTxt) == false) {
+      document.getElementById("uur_error").innerHTML =
+         "Geen geldig tijstip";
+      allesCorrectIngevuld = false;
+   } else {
+      document.getElementById("uur_error").innerHTML = "";
+   }
+}
+
 // hoofdfunctie
 function verstuur() {
     naamTxt = document.getElementById("naam").value;
@@ -79,6 +91,8 @@ function verstuur() {
     privacyCheck = document.getElementById("privacy");
 
     allesCorrectIngevuld = true;
+   
+      console.log(uurTxt);
 
     // controle naam ingevuld
     if (naamTxt.length == 0) {
@@ -134,12 +148,12 @@ function verstuur() {
         document.getElementById("datum_error").innerHTML = "";
     }
 
-    //controle geselecteerde datum
+    //controle geselecteerde uur
     if (uurTxt == 0) {
         document.getElementById("uur_error").innerHTML = "Kies a.u.b.";
         allesCorrectIngevuld = false;
      } else {
-        document.getElementById("uur_error").innerHTML = "";
+        controleerVoorwaardenUur();
     }
 
     //controle privacy check
@@ -154,7 +168,7 @@ function verstuur() {
         link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
         encodeURIComponent("Reservering") +
         "&body=" +
-        "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen " + encodeURIComponent(geselecteerdeKeuze) + " voor " + encodeURIComponent(geselecteerdeAantal) + "personen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt)+ " " + encodeURIComponent(uurTxt) + '%0D%0D' + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
+        "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen " + encodeURIComponent(geselecteerdeKeuze) + " voor " + encodeURIComponent(geselecteerdeAantal) + "personen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt)+ " om " + encodeURIComponent(uurTxt) + '%0D%0D' + "Uw bericht%0D" + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
         window.location.href = link; 
    }
 }
