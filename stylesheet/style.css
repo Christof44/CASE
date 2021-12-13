@@ -459,6 +459,14 @@ h2::first-letter {
     float: left;
 }
 
+.border2 {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+
 .verzend_formulier {
     padding: 15px 25px;
     margin: 25px 0 50px 25px;
