@@ -492,9 +492,7 @@ h2::first-letter {
 .ladies {
     width: 300px;
     height: 400px;
-    float: left;
     background-color: grey;
-    margin: 50px 50px;
 }
 
 .disco{
@@ -738,6 +736,10 @@ button.info {
 
 .fotokader4 {
     margin-top: 60px;
+}
+
+.fotokader5 {
+    margin-top: 102px;
 }
 
 .info2 p {
