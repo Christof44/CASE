@@ -71,11 +71,8 @@ nav a:hover {
 }
 
 footer {
-<<<<<<< HEAD
+
     background-color: #333;
-=======
-    background-color:   #333333;
->>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
     color: white;
     height: 400px;
     padding: 40px 0;
@@ -111,7 +108,7 @@ footer {
 }
 
 .footer2 img {
-    margin: 0 50px;
+    margin: 0 50px 25px;
     width: 285px;
 }
 
@@ -605,7 +602,6 @@ label {
 
 .food,
 .drinks,
-.foto,
 .prijs,
 .inbegrepen,
 .grill,
