@@ -121,6 +121,47 @@ footer {
     color: #7bbb2b;
 }
 
+.intro_home{
+    background-image: url(../images/Eetsmakelijk.jpg);
+    height: 370px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home{
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    color: white;
+    margin-top: 60px;
+}
+
+.boeken2{
+    padding: 15px 25px;
+    background-color: #7bbb2b;
+    border-radius: 15px;
+    border-style: none;
+    margin: 0 60px;
+}
+
+.boeken3{
+    padding: 15px 25px;
+    background-color: #a40059;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.boeken2 a,
+.boeken3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.home{
+    float: left;
+    width: 400px;
+}
+
 .video {
     margin: 50px 320px;
 }
