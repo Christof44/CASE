@@ -168,7 +168,7 @@ function verstuur() {
         link = 'mailto:' + encodeURIComponent(emailTxt) + "?cc=" + encodeURIComponent("") + "&subject=" +
         encodeURIComponent("Reservering") +
         "&body=" +
-        "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen " + encodeURIComponent(geselecteerdeKeuze) + " voor " + encodeURIComponent(geselecteerdeAantal) + "personen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt)+ " " + encodeURIComponent(uurTxt) + '%0D%0D' + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
+        "Beste " + encodeURIComponent(naamTxt)+ "%0D%0D" +"Dank u om voor Sportagon te kiezen " + encodeURIComponent(geselecteerdeKeuze) + " voor " + encodeURIComponent(geselecteerdeAantal) + "personen, uw reservering is gelukt.%0D" + "We zien u graag op " + encodeURIComponent(datumTxt)+ " om " + encodeURIComponent(uurTxt) + '%0D%0D' + "Uw bericht%0D" + encodeURIComponent(berichtTxt) + "%0D%0D" + "Met vriendelijke groet%0D" + "Sportagon";
         window.location.href = link; 
    }
 }
