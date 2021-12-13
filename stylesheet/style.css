@@ -232,6 +232,10 @@ p {
     text-decoration: none;
 }
 
+.boeken a:hover{
+    border-bottom: 1px solid #7bbb2b;
+}
+
 .paars {
     height: 5px;
     border-width: 0;
@@ -299,6 +303,9 @@ p {
 .inschrijven a {
     color: white;
     text-decoration: none;
+}
+.inschrijven a:hover{
+    border-bottom: 1px solid #7bbb2b;
 }
 
 .image-holder {
