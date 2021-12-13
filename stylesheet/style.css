@@ -172,7 +172,8 @@ footer {
 .groen {
     height: 5px;
     border-width: 0;
-    color: #79B928 background-color: #79B928
+    color: #79B928;
+    background-color: #79B928;
 }
 
 h1::first-letter {
@@ -801,35 +802,32 @@ button.menukaart2 {
     float: left;
 }
 
-<<<<<<< HEAD .groene_letter {
-    color: #79B928;
+.groene_letter {
+    color: #76af46;
+    font-size: 35px;
+}
 
-    =======.groene_letter {
-        color: #76af46;
-        >>>>>>>c87eb79d5afad1a5ae56bd0b069593dc86d72fb1 font-size: 35px;
-    }
+#mc_embed_signup {
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
 
-    #mc_embed_signup {
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-    }
+#mc-embedded-subscribe-form input[type=checkbox] {
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+}
 
-    #mc-embedded-subscribe-form input[type=checkbox] {
-        display: inline;
-        width: auto;
-        margin-right: 10px;
-    }
+#mergeRow-gdpr {
+    margin-top: 20px;
+}
 
-    #mergeRow-gdpr {
-        margin-top: 20px;
-    }
+#mergeRow-gdpr fieldset label {
+    font-weight: normal;
+}
 
-    #mergeRow-gdpr fieldset label {
-        font-weight: normal;
-    }
-
-    #mc-embedded-subscribe-form .mc_fieldset {
-        border: none;
-        min-height: 0px;
-        padding-bottom: 0px;
-    }
+#mc-embedded-subscribe-form .mc_fieldset {
+    border: none;
+    min-height: 0px;
+    padding-bottom: 0px;
+}
