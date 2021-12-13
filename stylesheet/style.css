@@ -25,15 +25,9 @@ body {
 
 header {
     height: 120px;
-<<<<<<< HEAD
-    padding-top: 25px;
     background-color: #333;
-=======
     padding: 40px 0 15px;
-    background-color: #333333;
->>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
 }
-
 
 nav {
     width: 800px;
@@ -71,7 +65,6 @@ nav a:hover {
 }
 
 footer {
-
     background-color: #333;
     color: white;
     height: 400px;
@@ -179,8 +172,7 @@ footer {
 .groen {
     height: 5px;
     border-width: 0;
-    color: #79B928
-    background-color: #79B928
+    color: #79B928 background-color: #79B928
 }
 
 h1::first-letter {
@@ -809,37 +801,35 @@ button.menukaart2 {
     float: left;
 }
 
-<<<<<<< HEAD
-.groene_letter{
+<<<<<<< HEAD .groene_letter {
     color: #79B928;
-=======
-.groene_letter {
-    color: #76af46;
->>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
-    font-size: 35px;
-}
 
-#mc_embed_signup {
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-}
+    =======.groene_letter {
+        color: #76af46;
+        >>>>>>>c87eb79d5afad1a5ae56bd0b069593dc86d72fb1 font-size: 35px;
+    }
 
-#mc-embedded-subscribe-form input[type=checkbox] {
-    display: inline;
-    width: auto;
-    margin-right: 10px;
-}
+    #mc_embed_signup {
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+    }
 
-#mergeRow-gdpr {
-    margin-top: 20px;
-}
+    #mc-embedded-subscribe-form input[type=checkbox] {
+        display: inline;
+        width: auto;
+        margin-right: 10px;
+    }
 
-#mergeRow-gdpr fieldset label {
-    font-weight: normal;
-}
+    #mergeRow-gdpr {
+        margin-top: 20px;
+    }
 
-#mc-embedded-subscribe-form .mc_fieldset {
-    border: none;
-    min-height: 0px;
-    padding-bottom: 0px;
-}
+    #mergeRow-gdpr fieldset label {
+        font-weight: normal;
+    }
+
+    #mc-embedded-subscribe-form .mc_fieldset {
+        border: none;
+        min-height: 0px;
+        padding-bottom: 0px;
+    }
