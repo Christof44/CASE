@@ -259,7 +259,7 @@ p {
     float: left;
     margin: 100px 125px;
     text-align: center;
-    background-color: ##BBB;
+    background-color: #BBB;
     padding: 25px 10px;
 }
 
@@ -420,7 +420,7 @@ h2::first-letter {
 }
 
 .formulier {
-    background-color: ##BBB;
+    background-color: #BBB;
 }
 
 .formulier p {
