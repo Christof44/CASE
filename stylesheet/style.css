@@ -236,7 +236,7 @@ p {
     float: left;
     margin: 100px 40px;
     text-align: center;
-    background-color: #808A87;
+    background-color: #CCC;
     padding: 25px 10px;
 }
 
@@ -259,7 +259,7 @@ p {
     float: left;
     margin: 100px 125px;
     text-align: center;
-    background-color: #808A87;
+    background-color: #CCC;
     padding: 25px 10px;
 }
 
@@ -420,7 +420,7 @@ h2::first-letter {
 }
 
 .formulier {
-    background-color: grey;
+    background-color: #CCC;
 }
 
 .formulier p {
@@ -484,7 +484,7 @@ h2::first-letter {
 }
 
 .formulier_reservering {
-    background-color: grey;
+    background-color: #CCC;
     width: 800px;
     margin: 0 auto;
     padding-top: 10px;
@@ -498,6 +498,24 @@ h2::first-letter {
 .form2colum {
     width: 50%;
     float: left;
+}
+
+.border2 {
+    margin: 9px 0 0 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+.border3 {
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+label{
+    font-size: 20px;
 }
 
 .verzend_formulier {
