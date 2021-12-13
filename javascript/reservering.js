@@ -63,6 +63,18 @@ function controleerVoorwaardenEmail() {
     }
 }
 
+// controle tijdstip
+function controleerVoorwaardenUur() {
+   let regExp2 = /(1[3-9]|20):([0-5][0-9])/;
+   if (regExp2.test(uurTxt) == false) {
+      document.getElementById("uur_error").innerHTML =
+         "Geen geldig tijstip";
+      allesCorrectIngevuld = false;
+   } else {
+      document.getElementById("uur_error").innerHTML = "";
+   }
+}
+
 // hoofdfunctie
 function verstuur() {
     naamTxt = document.getElementById("naam").value;
@@ -79,6 +91,8 @@ function verstuur() {
     privacyCheck = document.getElementById("privacy");
 
     allesCorrectIngevuld = true;
+   
+      console.log(uurTxt);
 
     // controle naam ingevuld
     if (naamTxt.length == 0) {
@@ -134,12 +148,12 @@ function verstuur() {
         document.getElementById("datum_error").innerHTML = "";
     }
 
-    //controle geselecteerde datum
+    //controle geselecteerde uur
     if (uurTxt == 0) {
         document.getElementById("uur_error").innerHTML = "Kies a.u.b.";
         allesCorrectIngevuld = false;
      } else {
-        document.getElementById("uur_error").innerHTML = "";
+        controleerVoorwaardenUur();
     }
 
     //controle privacy check
