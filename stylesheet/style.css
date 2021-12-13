@@ -243,7 +243,8 @@ p {
 .ster,
 .glas,
 .kalender,
-.feest {
+.feest,
+.socials {
     color: #7bbb2b;
     font-size: 30px;
 }
