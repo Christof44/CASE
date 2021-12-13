@@ -466,6 +466,16 @@ h2::first-letter {
     border: 0px;
 }
 
+.border3 {
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+label{
+    font-size: 20px;
+}
 
 .verzend_formulier {
     padding: 15px 25px;
