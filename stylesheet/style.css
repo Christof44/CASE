@@ -460,7 +460,7 @@ h2::first-letter {
 }
 
 .border2 {
-    margin-left: 5px;
+    margin: 9px 0 0 5px;
     padding: 5px 10px;
     border-radius: 15px;
     border: 0px;
