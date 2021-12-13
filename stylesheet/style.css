@@ -71,6 +71,10 @@ footer {
     padding: 40px 0 60px;
 }
 
+.fav{
+    margin-top: 50px;
+}
+
 .footer1 ul li {
     display: block;
 }
