@@ -45,15 +45,19 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    margin-right: 45px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid slategray;
+    margin-right: 10px;
 }
 
 nav a:hover {
-    color: #a40059;
+    border: 1px solid #a40059;
+    
 }
 
 .current {
-    color: #7bbb2b;
+    border: 1px solid #7bbb2b;
 }
 
 .headerlogo {
@@ -70,6 +74,10 @@ footer {
 
 .footer1 ul li {
     display: block;
+}
+
+.footer1 p{
+    text-align: left;
 }
 
 .footer1 a {
@@ -366,7 +374,6 @@ p {
 }
 
 h2::first-letter {
-    font-size: 40px;
     font-weight: bold;
     color: #7bbb2b;
 }
@@ -377,12 +384,6 @@ h2::first-letter {
 
 .formulier p {
     text-align: left;
-}
-
-.formulier p::first-letter {
-    font-size: 20px;
-    font-weight: bolder;
-    color: #7bbb2b;
 }
 
 .breed {
