@@ -74,7 +74,7 @@ footer {
     padding: 40px 0 60px;
 }
 
-.fav{
+.fav {
     margin-top: 50px;
 }
 
@@ -164,11 +164,11 @@ footer {
     text-decoration: none;
 }
 
-.boeken2 a:hover{
+.boeken2 a:hover {
     border-bottom: 1px solid #a40059;
 }
 
-.boeken3 a:hover{
+.boeken3 a:hover {
     border-bottom: 1px solid #7bbb2b;
 }
 
@@ -235,7 +235,7 @@ p {
     text-decoration: none;
 }
 
-.boeken a:hover{
+.boeken a:hover {
     border-bottom: 1px solid #7bbb2b;
 }
 
@@ -272,7 +272,8 @@ p {
     text-decoration: none;
     color: #a40059;
 }
-.eten_drinken a:hover{
+
+.eten_drinken a:hover {
     border-bottom: 1px solid #7bbb2b;
 }
 
@@ -307,7 +308,8 @@ p {
     color: white;
     text-decoration: none;
 }
-.inschrijven a:hover{
+
+.inschrijven a:hover {
     border-bottom: 1px solid #7bbb2b;
 }
 
@@ -316,8 +318,6 @@ p {
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-    width: 398px;
-    height: 247px;
 }
 
 .image-holder img {
@@ -332,8 +332,6 @@ p {
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
-    width: 398px;
-    height: 247px;
 }
 
 .image-holder2 img {
@@ -369,6 +367,10 @@ p {
     margin: 50px 100px;
 }
 
+.minigolf2{
+    margin-top: -10px;
+}
+
 .boeken {
     text-align: center;
 }
@@ -388,22 +390,6 @@ p {
 
 .knop1 {
     margin-top: 50px;
-}
-
-.image-holder3 {
-    border: 2px solid #a40059;
-    border-radius: 10px;
-    display: inline-block;
-    vertical-align: top;
-    width: 297;
-    height: 247;
-}
-
-.image-holder3 img {
-    position: relative;
-    z-index: -1;
-    left: 10px;
-    top: 10px;
 }
 
 .informatie button {
@@ -453,7 +439,7 @@ h2::first-letter {
 
 .students h2::first-letter,
 .bier h2::first-letter,
-.ladies h2::first-letter{
+.ladies h2::first-letter {
     color: black;
 }
 
@@ -497,7 +483,6 @@ h2::first-letter {
 
 .prijzen,
 .kids,
-.disco,
 .students,
 .bier,
 .ladies {
@@ -506,6 +491,13 @@ h2::first-letter {
     float: left;
     background-color: grey;
     margin: 50px 50px;
+}
+
+.disco{
+width: 300px;
+height: 400px;
+float: left;
+margin: 35px 50px;
 }
 
 .prijzen p {
@@ -682,6 +674,10 @@ label {
     margin-top: 90px;
 }
 
+.foto2{
+    margin-top: 60px;
+}
+
 .grill p,
 .rib p,
 .pasta p {
@@ -702,6 +698,13 @@ label {
 .formule2 h3 {
     text-align: center;
     padding-top: 15px;
+}
+
+.formule1,
+.formule2,
+.menu_lente,
+.prijs_lente{
+    margin-top: 30px;
 }
 
 .party p {
@@ -730,7 +733,7 @@ button.info {
 }
 
 .fotokader4 {
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 .info2 p {
@@ -782,7 +785,7 @@ button.contacteer {
 
 .menukaart2 {
     padding: 25px 45px;
-    margin: 50px 0;
+    margin: 0 0 50px;
     background-color: #a40059;
     border-radius: 15px;
     border-style: none;
@@ -791,6 +794,10 @@ button.contacteer {
 .menukaart2 a {
     text-decoration: none;
     color: white;
+}
+
+.menukaart2 a:hover{
+    border-bottom: 1px solid #76af46;
 }
 
 button.menukaart2 {

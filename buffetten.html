@@ -14,7 +14,7 @@
         <div class="container_header">
             <div class="headerlogo cf">
                 <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
+                    <img src="images/logo.png" alt="Logo">
                 </a>
             </div>
             <div class="headermenu cf">
@@ -56,7 +56,9 @@
                 </div>
             </div>
             <div class="kader fotokader4 cf">
-                <img class="border" src="images/buffet_02.jpg" width="300px" height="400px" alt="foto van buffettafel">
+                <div class="image-holder2">
+                    <img class="border" src="images/buffet_02.jpg" width="300px" height="400px" alt="foto van buffettafel">
+                </div>
             </div>
         </div>
         <hr class="groen">
@@ -69,96 +71,90 @@
                 Onze ijskar! Geschept ijs afwerken volgens eigen fantasie vanaf €6. Ijskar 4 kids (jonger dan 12 jaar) = €4</p>
         </div>
         <hr class="paars">
-
         <div class="container">
             <div class="formulier_reservering">
-              <h1>Reservering</h1>
-              <form class="breed" action="get">
-                <div class="form2colum">
-                  <p>
-                    <label class="required" for="naam">Naam</label>
-                    <input class="border2" type="text" id="naam" />
-                    <span class="error" id="naam_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="telefoon">Telefoon</label>
-                    <input class="border2" type="text" id="telefoon" />
-                    <span class="error" id="telefoon_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="aantal_personen">Aantal personen</label>
-                    <select class="border2" name="aantal_personen" id="aantal_personen">
-                      <option value="">Selecteer</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                    <span class="error" id="aantal_personen_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="datum">Datum</label>
-                    <input class="border2" type="date" id="datum" />
-                    <span class="error" id="datum_error"></span>
-                  </p>
-                </div>
-        
-                <div class="form2colum">
-                  <p>
-                    <label for="bedrijf">Bedrijf</label>
-                    <input class="border2" type="text" id="bedrijf" />
-                    <span class="error" id="bedrijf_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="email">Email</label>
-                    <input class="border2" type="text" id="email" />
-                    <span class="error" id="email_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="keuze">Keuze buffet</label>
-                    <select class="border2" name="keuze" id="keuze">
-                      <option value="">Selecteer</option>
-                      <!-- Hier de opties verandere -->
-                      <option value="brueghel_buffet">Brueghel buffet</option>
-                      <option value="chicken_tonight">Chicken Tonight</option>
-                      <option value="la_italia">LA italia!</option>
-                      <!-- ^^^^ -->
-                    </select>
-                    <span class="error" id="keuze_error"></span>
-                  </p>
-                  <p>
-                    <label class="required" for="uur">Tijdstip</label>
-                    <input class="border2" type="time" id="uur" min="16:00" max="19:00" />
-                    <span class="error" id="uur_error"></span>
-                  </p>
-                  
-                </div>
-                <p>
-                  <label for="bericht">Bericht</label><br />
-                  <textarea class="border2" placeholder=" Vul hier je bericht in..." name="bericht" id="bericht" cols="80"
-                    rows="5"></textarea>
-                </p>
-                <p>
-                  <label for="privacy">Privacybeleid</label>
-                  <input type="checkbox" name="privacy" id="privacy">
-                  <span class="error" id="privacy_error"></span>
-        
-                  <input class="border verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
-                </p>
-              </form>
+                <h1>Reservering</h1>
+                <form class="breed" action="get">
+                    <div class="form2colum">
+                        <p>
+                            <label class="required" for="naam">Naam</label>
+                            <input class="border2" type="text" id="naam" />
+                            <span class="error" id="naam_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="telefoon">Telefoon</label>
+                            <input class="border2" type="text" id="telefoon" />
+                            <span class="error" id="telefoon_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="aantal_personen">Aantal personen</label>
+                            <select class="border2" name="aantal_personen" id="aantal_personen">
+                                <option value="">Selecteer</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <span class="error" id="aantal_personen_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="datum">Datum</label>
+                            <input class="border2" type="date" id="datum" />
+                            <span class="error" id="datum_error"></span>
+                        </p>
+                    </div>
+                    <div class="form2colum">
+                        <p>
+                            <label for="bedrijf">Bedrijf</label>
+                            <input class="border2" type="text" id="bedrijf" />
+                            <span class="error" id="bedrijf_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="email">Email</label>
+                            <input class="border2" type="text" id="email" />
+                            <span class="error" id="email_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="keuze">Keuze buffet</label>
+                            <select class="border2" name="keuze" id="keuze">
+                                <option value="">Selecteer</option>
+                                <!-- Hier de opties verandere -->
+                                <option value="brueghel_buffet">Brueghel buffet</option>
+                                <option value="chicken_tonight">Chicken Tonight</option>
+                                <option value="la_italia">LA italia!</option>
+                                <!-- ^^^^ -->
+                            </select>
+                            <span class="error" id="keuze_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="uur">Tijdstip</label>
+                            <input class="border2" type="time" id="uur" min="16:00" max="19:00" />
+                            <span class="error" id="uur_error"></span>
+                        </p>
+                    </div>
+                    <p>
+                        <label for="bericht">Bericht</label><br />
+                        <textarea class="border2" placeholder=" Vul hier je bericht in..." name="bericht" id="bericht" cols="80" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <label for="privacy">Privacybeleid</label>
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <span class="error" id="privacy_error"></span>
+                        <input class="border verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
+                    </p>
+                </form>
             </div>
-          </div>
-
+        </div>
     </main>
     <footer>
         <div class="container_footer">
             <div class="footer1 cf">
                 <ul>
                     <li>
-                      <p>Adres</p>
-                      <p><a href="https://www.google.com/maps/dir//Sportlaan+5,+3980+Tessenderlo/@51.0755491,5.0856614,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c1378eea670b83:0x5474c08c4189356e!2m2!1d5.0878501!2d51.0755491!3e0" target="_blank">Sportlaan 5 - 3980 Tessenderlo</a></p>
+                        <p>Adres</p>
+                        <p><a href="https://www.google.com/maps/dir//Sportlaan+5,+3980+Tessenderlo/@51.0755491,5.0856614,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47c1378eea670b83:0x5474c08c4189356e!2m2!1d5.0878501!2d51.0755491!3e0" target="_blank">Sportlaan 5 - 3980 Tessenderlo</a></p>
                     </li>
                     <li>
                         <p>Telefoon</p>
@@ -180,7 +176,7 @@
             </div>
             <div class="footer2 cf">
                 <a href="index.html">
-                <img src="images/logo.png" alt="logo">
+                    <img src="images/logo.png" alt="logo">
                 </a>
                 <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.783360392711!2d5.0856614157541316!3d51.0755490795665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1378eea670b83%3A0x5474c08c4189356e!2sSportlaan%205%2C%203980%20Tessenderlo!5e0!3m2!1sen!2sbe!4v1638953561628!5m2!1sen!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
