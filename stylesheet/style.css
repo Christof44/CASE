@@ -68,7 +68,7 @@ footer {
     background-color: #333;
     color: white;
     height: 400px;
-    padding: 40px 0;
+    padding: 40px 0 60px;
 }
 
 .footer1 ul li {
@@ -85,7 +85,7 @@ footer {
 }
 
 .footer1 a:hover {
-    color: #a40059;
+    border-bottom: 1px solid #a40059;
 }
 
 .footer1,
@@ -117,7 +117,7 @@ footer {
 }
 
 .footer3 a:hover {
-    color: #a40059;
+    border-bottom: 1px solid #a40059;
 }
 
 .intro_home {
@@ -125,6 +125,7 @@ footer {
     height: 370px;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .home {
@@ -154,6 +155,14 @@ footer {
 .boeken3 a {
     color: white;
     text-decoration: none;
+}
+
+.boeken2 a:hover{
+    border-bottom: 1px solid #a40059;
+}
+
+.boeken3 a:hover{
+    border-bottom: 1px solid #7bbb2b;
 }
 
 .home {
@@ -251,6 +260,9 @@ p {
 .eten_drinken a {
     text-decoration: none;
     color: #a40059;
+}
+.eten_drinken a:hover{
+    border-bottom: 1px solid #7bbb2b;
 }
 
 .goud {
