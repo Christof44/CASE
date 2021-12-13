@@ -448,6 +448,12 @@ h2::first-letter {
     color: #7bbb2b;
 }
 
+.students h2::first-letter,
+.bier h2::first-letter,
+.ladies h2::first-letter{
+    color: black;
+}
+
 .formulier {
     background-color: #BBB;
 }
