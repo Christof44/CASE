@@ -147,33 +147,34 @@ footer {
     margin-top: 60px;
 }
 
-.boeken2 {
-    padding: 15px 25px;
-    background-color: #7bbb2b;
-    border-radius: 15px;
-    border-style: none;
+.knop_uitlijn {
     margin: 0 60px;
 }
 
-.boeken3 {
-    padding: 15px 25px;
+.button_groen {
+    background-color: #7bbb2b;
+}
+
+.button_paars {
     background-color: #a40059;
+}
+
+.button_groen,
+.button_paars {
+    color: white;
     border-radius: 15px;
     border-style: none;
+    padding: 15px 25px;
 }
 
-.boeken2 a,
-.boeken3 a {
-    color: white;
-    text-decoration: none;
+.button_groen:hover {
+    text-decoration: underline #A40159;
+    cursor: pointer;
 }
 
-.boeken2 a:hover {
-    border-bottom: 1px solid #a40059;
-}
-
-.boeken3 a:hover {
-    border-bottom: 1px solid #7bbb2b;
+.button_paars:hover {
+    text-decoration: underline #79B928;
+    cursor: pointer;
 }
 
 .home {
@@ -225,22 +226,6 @@ h1 {
 .partybowling,
 p {
     text-align: center;
-}
-
-.boeken button {
-    padding: 15px 25px;
-    background-color: #a40059;
-    border-radius: 15px;
-    border-style: none;
-}
-
-.boeken a {
-    color: white;
-    text-decoration: none;
-}
-
-.boeken a:hover {
-    border-bottom: 1px solid #7bbb2b;
 }
 
 .paars {
@@ -299,22 +284,6 @@ p {
 
 .nieuwsbrief {
     text-align: center;
-}
-
-.nieuwsbrief button.inschrijven {
-    padding: 15px 25px;
-    background-color: #a40059;
-    border-radius: 15px;
-    border-style: none;
-}
-
-.inschrijven a {
-    color: white;
-    text-decoration: none;
-}
-
-.inschrijven a:hover {
-    border-bottom: 1px solid #7bbb2b;
 }
 
 .image-holder {
@@ -392,25 +361,16 @@ p {
     margin-bottom: 57px;
 }
 
-.knop1 {
+.margin_top_50 {
     margin-top: 50px;
 }
 
-.informatie button {
-    padding: 15px 25px;
+.informatie .button_groen {
     margin-top: 25px;
-    background-color: #76af46;
-    border-radius: 15px;
-    border-style: none;
 }
 
 .informatie {
     text-align: center;
-}
-
-.informatie a {
-    text-decoration: none;
-    color: white;
 }
 
 .gegevens,
@@ -552,12 +512,7 @@ label {
 }
 
 .verzend_formulier {
-    padding: 15px 25px;
     margin: 25px 0 50px 25px;
-    background-color: #a40059;
-    border-radius: 15px;
-    border-style: none;
-    color: white;
 }
 
 .menu2colum {
@@ -714,20 +669,7 @@ label {
 }
 
 .info {
-    padding: 15px 25px;
-    margin-top: 50px;
-    background-color: #76af46;
-    border-radius: 15px;
-    border-style: none;
-}
-
-.info a {
-    color: white;
-    text-decoration: none;
-}
-
-button.info {
-    margin-left: 100px;
+    margin: 50px 0 0 100px;
 }
 
 .fotokader3 {
@@ -767,16 +709,7 @@ button.info {
 }
 
 .contacteer {
-    padding: 15px 25px;
-    margin: 25px 0 50px 25px;
-    background-color: #76af46;
-    border-radius: 15px;
-    border-style: none;
-
-}
-
-button.contacteer {
-    margin-left: 80px;
+    margin: 20px 0 0 80px;
 }
 
 .contacteer a {
@@ -786,28 +719,16 @@ button.contacteer {
 
 .team2 p,
 .voorbeeld p {
-    padding: 75px 50px;
+    padding: 75px 50px 0;
 }
 
 .menukaart2 {
     padding: 25px 45px;
-    margin: 0 0 50px;
-    background-color: #a40059;
-    border-radius: 15px;
-    border-style: none;
+    margin-bottom: 50px;
 }
 
-.menukaart2 a {
-    text-decoration: none;
-    color: white;
-}
-
-.menukaart2 a:hover{
-    border-bottom: 1px solid #76af46;
-}
-
-button.menukaart2 {
-    margin-left: 570px;
+.midden {
+    text-align: center;
 }
 
 .container_nieuwsbrief {
