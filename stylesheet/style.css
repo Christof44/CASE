@@ -25,8 +25,13 @@ body {
 
 header {
     height: 120px;
+<<<<<<< HEAD
     padding-top: 25px;
     background-color: #333;
+=======
+    padding: 40px 0 15px;
+    background-color: #333333;
+>>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
 }
 
 
@@ -47,13 +52,13 @@ nav a {
     font-size: 20px;
     border-radius: 15px;
     padding: 5px 10px;
-    border: 1px solid slategray;
+    border: 1px solid #333;
     margin-right: 10px;
 }
 
 nav a:hover {
     border: 1px solid #a40059;
-    
+
 }
 
 .current {
@@ -66,27 +71,31 @@ nav a:hover {
 }
 
 footer {
+<<<<<<< HEAD
     background-color: #333;
+=======
+    background-color:   #333333;
+>>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
     color: white;
     height: 400px;
-    padding: 25px 0;
+    padding: 40px 0;
 }
 
 .footer1 ul li {
     display: block;
 }
 
-.footer1 p{
+.footer1 p {
     text-align: left;
 }
 
 .footer1 a {
-    color: #a40059;
+    color: #7bbb2b;
     text-decoration: none;
 }
 
 .footer1 a:hover {
-    color: #7bbb2b;
+    color: #a40059;
 }
 
 .footer1,
@@ -114,21 +123,21 @@ footer {
 
 .footer3 a {
     text-decoration: none;
-    color: #a40059;
-}
-
-.footer3 a:hover {
     color: #7bbb2b;
 }
 
-.intro_home{
+.footer3 a:hover {
+    color: #a40059;
+}
+
+.intro_home {
     background-image: url(../images/Eetsmakelijk.jpg);
     height: 370px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.home{
+.home {
     margin-left: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
@@ -136,7 +145,7 @@ footer {
     margin-top: 60px;
 }
 
-.boeken2{
+.boeken2 {
     padding: 15px 25px;
     background-color: #7bbb2b;
     border-radius: 15px;
@@ -144,7 +153,7 @@ footer {
     margin: 0 60px;
 }
 
-.boeken3{
+.boeken3 {
     padding: 15px 25px;
     background-color: #a40059;
     border-radius: 15px;
@@ -152,12 +161,12 @@ footer {
 }
 
 .boeken2 a,
-.boeken3 a{
+.boeken3 a {
     color: white;
     text-decoration: none;
 }
 
-.home{
+.home {
     float: left;
     width: 400px;
 }
@@ -236,15 +245,22 @@ p {
     float: left;
     margin: 100px 40px;
     text-align: center;
-    background-color: #BBB;
+    background-color: #bbb;
     padding: 25px 10px;
 }
 
 .ster,
 .glas,
 .kalender,
-.feest {
+.feest,
+.socials {
     color: #7bbb2b;
+    font-size: 30px;
+}
+
+.eten_drinken a {
+    text-decoration: none;
+    color: #a40059;
 }
 
 .goud {
@@ -254,10 +270,10 @@ p {
 .review1,
 .review2,
 .review3 {
-    width: 125px;
+    width: 150px;
     height: 175px;
     float: left;
-    margin: 100px 125px;
+    margin: 50px 112.5px;
     text-align: center;
     background-color: #BBB;
     padding: 25px 10px;
@@ -514,7 +530,7 @@ h2::first-letter {
     border: 0px;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
@@ -691,7 +707,7 @@ button.info {
     margin-top: 85px;
 }
 
-.fotokader4{
+.fotokader4 {
     margin-top: 65px;
 }
 
@@ -783,11 +799,11 @@ button.menukaart2 {
     float: left;
 }
 
-.inschrijven_nieuwsbrief h1{
+.inschrijven_nieuwsbrief h1 {
     margin: 0 150px;
 }
 
-.inschrijven_nieuwsbrief p{
+.inschrijven_nieuwsbrief p {
     margin: 50px 150px;
     font-size: 24px;
 }
@@ -797,8 +813,13 @@ button.menukaart2 {
     float: left;
 }
 
+<<<<<<< HEAD
 .groene_letter{
     color: #79B928;
+=======
+.groene_letter {
+    color: #76af46;
+>>>>>>> c87eb79d5afad1a5ae56bd0b069593dc86d72fb1
     font-size: 35px;
 }
 
