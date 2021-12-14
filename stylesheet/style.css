@@ -649,7 +649,6 @@ label {
 
 .grill h3,
 .rib h3,
-.prijs2 h3,
 .special h3,
 .pasta h3,
 .prijs3 h3,
@@ -657,6 +656,11 @@ label {
 .formule2 h3 {
     text-align: center;
     padding-top: 15px;
+}
+
+.prijs2 p {
+    padding-top: 10px;
+    margin: 10px;
 }
 
 .formule1,
