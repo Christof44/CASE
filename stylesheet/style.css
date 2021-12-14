@@ -246,7 +246,7 @@ p {
     float: left;
     margin: 100px 40px;
     text-align: center;
-    background-color: #bbb;
+    background-color: #c4c4c4;
     padding: 25px 10px;
 }
 
@@ -280,7 +280,7 @@ p {
     float: left;
     margin: 50px 112.5px;
     text-align: center;
-    background-color: #BBB;
+    background-color: #c4c4c4;
     padding: 25px 10px;
 }
 
@@ -393,6 +393,10 @@ p {
     text-align: left;
 }
 
+.gegevens h2 {
+    margin-top: 50px;
+}
+
 .gegevens a {
     text-decoration: none;
     color: #7bbb2b;
@@ -410,7 +414,7 @@ h2::first-letter {
 }
 
 .formulier {
-    background-color: #BBB;
+    background-color: #c4c4c4;
 }
 
 .formulier p {
@@ -605,7 +609,7 @@ label {
 .combi {
     width: 300px;
     height: 400px;
-    background-color: grey;
+    background-color: #c4c4c4;
 }
 
 .food p,
@@ -642,7 +646,6 @@ label {
 }
 
 .grill p,
-.rib p,
 .pasta p {
     padding-top: 25px;
 }
@@ -654,7 +657,6 @@ label {
 .grill h3,
 .rib h3,
 .special h3,
-.pasta h3,
 .prijs3 h3,
 .formule1 h3,
 .formule2 h3 {
@@ -668,7 +670,9 @@ label {
     margin: 10px;
 }
 
-.menu_feest p {
+.menu_feest p,
+.rib p,
+.pasta p {
     margin: 10px;
 }
 
@@ -704,7 +708,7 @@ label {
 }
 
 .info2 p {
-    padding: 75px 50px 0;
+    padding: 50px 50px 0;
 }
 
 .prijs4 p {
@@ -714,14 +718,13 @@ label {
 
 .formule1 p,
 .formule2 p,
-.prijs_lente p,
-.prijs_binnenspeeltuin p,
-.combi p {
+.prijs_lente p {
     padding-top: 50px;
 }
 
 .menu_lente p {
-    padding-top: 35px;
+    padding-top: 30px;
+    margin: 0;
 }
 
 .contacteer {
