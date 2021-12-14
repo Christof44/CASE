@@ -317,8 +317,8 @@ p {
 .image-holder-paars div {
     position: relative;
     z-index: -1;
-    left: 15px;
-    bottom: 5px;
+    left: 10px;
+    bottom: 10px;
 }
 
 .formaat_400_250 {
@@ -728,7 +728,7 @@ label {
 }
 
 .fotokader2 {
-    margin-top: 78px;
+    margin-top: 73px;
 }
 
 .fotokader3 {
