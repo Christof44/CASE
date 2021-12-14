@@ -393,6 +393,10 @@ p {
     text-align: left;
 }
 
+.gegevens h2 {
+    margin-top: 50px;
+}
+
 .gegevens a {
     text-decoration: none;
     color: #7bbb2b;
