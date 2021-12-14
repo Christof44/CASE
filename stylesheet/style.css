@@ -454,7 +454,7 @@ h2::first-letter {
 .ladies {
     width: 300px;
     height: 400px;
-    background-color: grey;
+    background-color: #c4c4c4;
 }
 
 .disco{
@@ -469,7 +469,11 @@ margin: 35px 50px;
 }
 
 .kids p {
-    margin: 60px 70px 0;
+    margin: 60px 35px 0;
+}
+
+.top3 {
+    padding-top: 60px;
 }
 
 .students h2,
@@ -664,6 +668,14 @@ label {
     margin: 10px;
 }
 
+.menu_feest p {
+    margin: 10px;
+}
+
+.top2 {
+    padding-top: 25px;
+}
+
 .formule1,
 .formule2,
 .menu_lente,
@@ -696,11 +708,8 @@ label {
 }
 
 .prijs4 p {
-    padding-top: 50px;
-}
-
-.menu_feest p {
-    padding-top: 7.5px;
+    padding-top: 35px;
+    margin: 0 10px;
 }
 
 .formule1 p,
