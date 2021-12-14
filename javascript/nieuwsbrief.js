@@ -36,3 +36,4 @@ src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
             });
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
+    
