@@ -366,9 +366,14 @@ p {
     height: 247px;
 }
 
-.formaat_300_250 {
+.formaat_300_250 img {
     width: 300px;
     height: 250px;
+}
+
+.formaat_600_770 {
+    width: 600px;
+    height: 770px;
 }
 
 .border {
@@ -430,10 +435,19 @@ p {
     text-align: center;
 }
 
+.kader_contact {
+    border: 5px solid #79B928;
+    border-radius: 50px;
+    position: relative;
+    right: 25px;
+    bottom: 25px;
+}
+
 .gegevens,
 .formulier {
     width: 600px;
     float: left;
+    z-index: -10;
 }
 
 .formulier {

@@ -47,35 +47,38 @@
                 <h2>E-mail</h2>
                 <p><a href="mailto:info@sportagon.be">info&#64;sportagon.be</a></p>
             </div>
+            
             <div class="formulier">
-                <h1>Contactformulier</h1>
-                <form class="breed" action="get">
-                    <p>
-                        <label class="required" for="naam">Naam</label><br>
-                        <input class="border3" type="text" id="naam">
-                        <span class="error" id="naam_error"></span>
-                    </p>
-                    <p>
-                        <label for="bedrijf">Bedrijf</label><br>
-                        <input class="border3" type="text" id="bedrijf">
-                        <span class="error" id="bedrijf_error"></span>
-                    </p>
-                    <p>
-                        <label class="required" for="email">E-mail</label><br>
-                        <input class="border3" type="email" id="email">
-                        <span class="error" id="email_error"></span>
-                    </p>
-                    <p>
-                        <label for="bericht">Uw bericht</label><br>
-                        <textarea class="border3" id="" placeholder="Vul hier je bericht of verdere info in..." cols="40" rows="10"></textarea>
-                    </p>
-                    <p>
-                        <label for="privacy">Privacybeleid:</label>
-                        <input type="checkbox" id="privacy">
-                        <span class="error" id="privacy_error"></span>
-                        <input class="border button_paars verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
-                    </p>
-                </form>
+                <div class="formaat_600_770 kader_contact">
+                    <h1 class="top2">Contactformulier</h1>
+                    <form class="breed" action="get">
+                        <p>
+                            <label class="required" for="naam">Naam</label><br>
+                            <input class="border3" type="text" id="naam">
+                            <span class="error" id="naam_error"></span>
+                        </p>
+                        <p>
+                            <label for="bedrijf">Bedrijf</label><br>
+                            <input class="border3" type="text" id="bedrijf">
+                            <span class="error" id="bedrijf_error"></span>
+                        </p>
+                        <p>
+                            <label class="required" for="email">E-mail</label><br>
+                            <input class="border3" type="email" id="email">
+                            <span class="error" id="email_error"></span>
+                        </p>
+                        <p>
+                            <label for="bericht">Uw bericht</label><br>
+                            <textarea class="border3" id="" placeholder="Vul hier je bericht of verdere info in..." cols="40" rows="10"></textarea>
+                        </p>
+                        <p>
+                            <label for="privacy">Privacybeleid:</label>
+                            <input type="checkbox" id="privacy">
+                            <span class="error" id="privacy_error"></span>
+                            <input class="border button_paars verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
         <hr class="paars">
