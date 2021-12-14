@@ -259,6 +259,10 @@ p {
     font-size: 30px;
 }
 
+.socials {
+    padding-right: 10px;
+}
+
 .eten_drinken a {
     text-decoration: none;
     color: #a40059;
@@ -387,6 +391,7 @@ p {
 
 .gegevens p {
     text-align: left;
+    margin-top: 10px;
 }
 
 .gegevens h1 {
@@ -394,7 +399,7 @@ p {
 }
 
 .gegevens h2 {
-    margin-top: 50px;
+    margin: 50px 0 10px;
 }
 
 .gegevens a {
