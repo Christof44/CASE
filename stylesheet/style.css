@@ -292,32 +292,63 @@ p {
     text-align: center;
 }
 
-.image-holder {
+.image-holder-groen {
     border: 2px solid #76af46;
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
 }
 
-.image-holder img {
-    position: relative;
-    z-index: -1;
-    left: 10px;
-    top: 10px;
-}
-
-.image-holder2 {
+.image-holder-paars {
     border: 2px solid #a40059;
     border-radius: 10px;
     display: inline-block;
     vertical-align: top;
 }
 
-.image-holder2 img {
+.image-holder-groen img,
+.image-holder-paars img {
     position: relative;
     z-index: -1;
     left: 10px;
     top: 10px;
+}
+
+.image-holder-paars div {
+    position: relative;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+}
+
+.formaat_400_250 {
+    width: 397px;
+    height: 247px;
+}
+
+.formaat_400_250 img {
+    width: 400px;
+    height: 250px;
+}
+
+.formaat_300_400 {
+    width: 297px;
+    height: 397px;
+}
+
+.formaat_300_400 img {
+    width: 300px;
+    height: 400px;
+}
+
+.formaat_300_250 {
+    width: 297px;
+    height: 247px;
+}
+
+.formaat_300_250 {
+    width: 300px;
+    height: 250px;
 }
 
 .border {
@@ -347,7 +378,7 @@ p {
 }
 
 .minigolf2{
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .boeken {
@@ -646,10 +677,6 @@ label {
     margin-top: 90px;
 }
 
-.foto2{
-    margin-top: 60px;
-}
-
 .grill p,
 .pasta p {
     padding-top: 25px;
@@ -698,6 +725,10 @@ label {
 
 .info {
     margin: 50px 0 0 100px;
+}
+
+.fotokader2 {
+    margin-top: 73px;
 }
 
 .fotokader3 {
