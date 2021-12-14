@@ -376,6 +376,16 @@ p {
     height: 770px;
 }
 
+.formaat_800_632 {
+    width: 800px;
+    height: 632px;
+}
+
+.formaat_600_900 {
+    width: 600px;
+    height: 910px;
+}
+
 .border {
     border-radius: 10px;
     border-style: none;
@@ -435,7 +445,8 @@ p {
     text-align: center;
 }
 
-.kader_contact {
+.kader_contact,
+.kader_reservering {
     border: 5px solid #79B928;
     border-radius: 50px;
     position: relative;
@@ -557,7 +568,7 @@ margin: 35px 50px;
     background-color: #C4C4C4;
     width: 800px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 0px;
     border-radius: 50px;
 }
 
@@ -844,7 +855,7 @@ label {
 
 .brief {
     padding: 25px 45px;
-    margin: 50px 0;
+    margin: 50px 0 30px;
     background-color: #a40059;
     border-radius: 15px;
     border-style: none;
@@ -877,6 +888,7 @@ label {
 #mc_embed_signup {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+    margin-top: 50px;
 }
 
 #mc-embedded-subscribe-form input[type=checkbox] {

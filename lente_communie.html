@@ -148,78 +148,80 @@
         <hr class="groen">
         <div class="container">
             <div class="formulier_reservering">
-                <h1>Reservering</h1>
-                <form class="breed" action="get">
-                    <div class="form2colum">
+                <div class="formaat_800_632 kader_reservering">
+                    <h1 class="top2">Reservering</h1>
+                    <form class="breed" action="get">
+                        <div class="form2colum">
+                            <p>
+                                <label class="required" for="naam">Naam</label>
+                                <input class="border2" type="text" id="naam" />
+                                <span class="error" id="naam_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="telefoon">Telefoon</label>
+                                <input class="border2" type="text" id="telefoon" />
+                                <span class="error" id="telefoon_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="aantal_personen">Aantal personen</label>
+                                <select class="border2" name="aantal_personen" id="aantal_personen">
+                                    <option value="">Selecteer</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <span class="error" id="aantal_personen_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="datum">Datum</label>
+                                <input class="border2" type="date" id="datum" />
+                                <span class="error" id="datum_error"></span>
+                            </p>
+                        </div>
+                        <div class="form2colum">
+                            <p>
+                                <label for="bedrijf">Bedrijf</label>
+                                <input class="border2" type="text" id="bedrijf" />
+                                <span class="error" id="bedrijf_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="email">Email</label>
+                                <input class="border2" type="text" id="email" />
+                                <span class="error" id="email_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="keuze">Keuze</label>
+                                <select class="border2" name="keuze" id="keuze">
+                                    <option value="">Selecteer</option>
+                                    <!-- Hier de opties verandere -->
+                                    <option value="kinderfeest_formule_1">Kinderfeest formule 1</option>
+                                    <option value="kinderfeest_formule_2">Kinderfeest formule 2</option>
+                                    <option value="communiefeest">Lente- communiefeest</option>
+                                    <!-- ^^^^ -->
+                                </select>
+                                <span class="error" id="keuze_error"></span>
+                            </p>
+                            <p>
+                                <label class="required" for="uur">Tijdstip</label>
+                                <input class="border2" type="time" id="uur" min="16:00" max="19:00" />
+                                <span class="error" id="uur_error"></span>
+                            </p>
+                        </div>
                         <p>
-                            <label class="required" for="naam">Naam</label>
-                            <input class="border2" type="text" id="naam" />
-                            <span class="error" id="naam_error"></span>
+                            <label for="bericht">Bericht</label><br />
+                            <textarea class="border2" placeholder=" Vul hier je bericht in..." name="bericht" id="bericht" cols="80" rows="5"></textarea>
                         </p>
                         <p>
-                            <label class="required" for="telefoon">Telefoon</label>
-                            <input class="border2" type="text" id="telefoon" />
-                            <span class="error" id="telefoon_error"></span>
+                            <label for="privacy">Privacybeleid</label>
+                            <input type="checkbox" name="privacy" id="privacy">
+                            <span class="error" id="privacy_error"></span>
+                            <input class="button_paars verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
                         </p>
-                        <p>
-                            <label class="required" for="aantal_personen">Aantal personen</label>
-                            <select class="border2" name="aantal_personen" id="aantal_personen">
-                                <option value="">Selecteer</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                            <span class="error" id="aantal_personen_error"></span>
-                        </p>
-                        <p>
-                            <label class="required" for="datum">Datum</label>
-                            <input class="border2" type="date" id="datum" />
-                            <span class="error" id="datum_error"></span>
-                        </p>
-                    </div>
-                    <div class="form2colum">
-                        <p>
-                            <label for="bedrijf">Bedrijf</label>
-                            <input class="border2" type="text" id="bedrijf" />
-                            <span class="error" id="bedrijf_error"></span>
-                        </p>
-                        <p>
-                            <label class="required" for="email">Email</label>
-                            <input class="border2" type="text" id="email" />
-                            <span class="error" id="email_error"></span>
-                        </p>
-                        <p>
-                            <label class="required" for="keuze">Keuze</label>
-                            <select class="border2" name="keuze" id="keuze">
-                                <option value="">Selecteer</option>
-                                <!-- Hier de opties verandere -->
-                                <option value="kinderfeest_formule_1">Kinderfeest formule 1</option>
-                                <option value="kinderfeest_formule_2">Kinderfeest formule 2</option>
-                                <option value="communiefeest">Lente- communiefeest</option>
-                                <!-- ^^^^ -->
-                            </select>
-                            <span class="error" id="keuze_error"></span>
-                        </p>
-                        <p>
-                            <label class="required" for="uur">Tijdstip</label>
-                            <input class="border2" type="time" id="uur" min="16:00" max="19:00" />
-                            <span class="error" id="uur_error"></span>
-                        </p>
-                    </div>
-                    <p>
-                        <label for="bericht">Bericht</label><br />
-                        <textarea class="border2" placeholder=" Vul hier je bericht in..." name="bericht" id="bericht" cols="80" rows="5"></textarea>
-                    </p>
-                    <p>
-                        <label for="privacy">Privacybeleid</label>
-                        <input type="checkbox" name="privacy" id="privacy">
-                        <span class="error" id="privacy_error"></span>
-                        <input class="button_paars verzend_formulier" type="button" value="Verstuur" id="button_verstuur" onclick="verstuur()" />
-                    </p>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
