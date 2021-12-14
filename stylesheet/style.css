@@ -185,10 +185,14 @@ footer {
 
 .video {
     margin: 50px 320px;
+    width: 560px; 
+    height: 315px;
 }
 
 .video1 {
     margin-bottom: 50px;
+    width: 560px; 
+    height: 315px;
 }
 
 .groen {
